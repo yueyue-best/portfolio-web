@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="何悦的产品经理作品集：Robotaxi、AI 审查、GEO 内容增长与校园课程工具。">
+  <meta name="theme-color" content="#f7e9df">
+  <title>何悦｜产品经理作品集</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="回到首页"><span>HY</span><b>PORTFOLIO</b></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">菜单</button>
+    <nav id="main-nav" aria-label="主导航">
+      <a class="active" href="#home">关于我</a>
+      <a href="#education">教育背景</a>
+      <a href="#projects">个人作品</a>
+      <a href="#work">实习经历</a>
+      <a href="#skills">能力档案</a>
+      <a href="#contact">联系我</a>
+    </nav>
+    <a class="resume-link" href="assets/resume.pdf" target="_blank" rel="noreferrer">简历.pdf ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> HELLO / 你好</p>
+        <h1>Hi，<br>我是何悦</h1>
+        <p class="role">Product Manager / 产品经理</p>
+        <div class="tags personal-tags" aria-label="个人标签"><span>产品思辨</span><span>复杂规则拆解</span><span>数据驱动</span><span>AI Native</span></div>
+        <div class="hero-actions"><a class="button primary" href="#projects">查看项目 ↓</a><a class="button secondary" href="assets/resume.pdf" download="何悦-产品经理简历.pdf">下载简历</a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-aura"></div>
+        <div class="hero-photo"><img src="assets/hero-original.jpg" alt="何悦在全国先进计算技术创新大赛现场演讲"></div>
+        <div class="status-card"><small>NOW</small><strong>产品经理<br>AI 产品经理</strong><span>寻找 2027 届校招机会</span></div>
+        <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+      </div>
+      <a class="scroll-hint" href="#education">继续下滑，探索更多 <b>↓</b></a>
+    </section>
+
+    <section class="section internship-section" id="work">
+      <div class="section-heading left reveal"><p>03 / INTERNSHIP</p><h2>Robotaxi 乘客端产品实践</h2><span>重庆千里科技股份有限公司 · 产品经理实习生 · 2026.06—2026.09</span></div>
+
+      <article class="internship-overview reveal">
+        <div class="overview-copy"><small>ROLE OVERVIEW</small><h3>围绕 Robotaxi 乘客端，完成从功能设计到数据闭环的产品实践</h3><p>独立承接活动、场景卡及基础乘车链路等需求，覆盖需求定义、方案设计、研发协同与上线验收；同时参与数据体系建设，并探索 AI 在产品工作中的落地。</p></div>
+        <div class="internship-metrics"><div><strong>10+</strong><span>场主导跨职能评审</span></div><div><strong>50+</strong><span>项评审意见推动闭环</span></div><div><strong>60+</strong><span>页交互原型</span></div><div><strong>108</strong><span>项用户画像指标梳理</span></div></div>
+      </article>
+
+      <article class="activity-case reveal">
+        <header class="activity-header"><div><p class="activity-case-label"><span>CORE CASE</span>活动产品 0—1</p><h3>从一次运营活动，设计一套可配置、可衡量的活动产品</h3></div><p>面向 Robotaxi 试运营拉新与促活场景，从单次活动需求出发，完成 C 端参与链路、运营配置后台与数据方案设计，并在多轮评审中持续补齐任务、助力与奖励规则边界。</p></header>
+
+        <div class="activity-scope" aria-label="活动产品工作范围">
+          <section><b>01</b><h4>用户如何参与</h4><p>活动入口 → 领取任务 → 完成任务 → 好友助力 → 领取奖励，设计完整用户参与链路与异常状态。</p></section>
+          <section><b>02</b><h4>运营如何配置</h4><p>将活动、任务、奖励拆分为独立对象，通过关联组合支持不同活动规则复用。</p></section>
+          <section><b>03</b><h4>系统如何判断</h4><p>定义任务达成条件、好友绑定、奖励发放及库存等核心业务规则。</p></section>
+          <section><b>04</b><h4>效果如何衡量</h4><p>围绕参与、任务、助力与奖励链路设计埋点、业务指标与统计口径，并跟进数据验收。</p></section>
+        </div>
+
+        <div class="design-breakdowns">
+          <section class="design-breakdown config-breakdown">
+            <div class="breakdown-copy"><small>设计拆解 01</small><h4>从“写死活动”到“规则组合”：提升活动配置复用性</h4><p>初始需求以单次活动为中心配置任务和奖励。为减少后续活动重复开发，将活动、任务、奖励拆分为独立对象，并通过规则组定义「哪些任务满足什么条件 → 发放哪些奖励」。</p><dl><div><dt>关联任务</dt><dd>必选，从已创建任务中选择，可多选</dd></div><div><dt>达成关系</dt><dd>必选，“完成全部 / 完成任一”，单选</dd></div><div><dt>关联奖励</dt><dd>必选，从已创建奖励中选择，可多选</dd></div></dl></div>
+            <div class="config-visual"><div class="config-evidence"><img src="assets/activity-relations.jpg" alt="活动任务奖励关联配置"><img src="assets/activity-rules.jpg" alt="任务配置规则"></div></div>
+          </section>
+
+          <section class="design-breakdown assist-breakdown">
+            <div class="breakdown-copy"><small>设计拆解 02</small><h4>好友助力：一个“绑定”动作背后的关系状态设计</h4><p>评审过程中持续检查主流程之外的关系状态，使助力绑定从含义模糊的页面访问，变成可执行、可更新的用户动作。</p></div>
+            <div class="assist-versions"><article><b>初始方案</b><p>好友点击分享卡片后直接进入活动页。</p><span>缺少明确绑定动作，技术无法可靠确认关系</span></article><article><b>第一次调整</b><p>增加助力弹窗，以点击“立即助力”作为绑定触发节点。</p><span>关系可以被系统明确记录</span></article><article><b>第二次调整</b><p>允许新的绑定关系覆盖旧关系。</p><span>避免旧绑定阻塞新的助力行为</span></article></div>
+          </section>
+        </div>
+
+      </article>
+
+      <div class="internship-support">
+        <article class="data-proof reveal"><small>DATA PRODUCT</small><h3>让功能可衡量：从用户行为到业务指标</h3><p>围绕核心乘车链路，拆解事件、字段、触发时机和统计口径，并跟进技术方案与数据验收；用户画像建设中完成 108 项指标的计算逻辑与采集路径梳理。</p><div><span>业务问题</span><i>→</i><span>事件与字段</span><i>→</i><span>触发时机</span><i>→</i><span>指标口径</span><i>→</i><span>数据验收</span></div></article>
+
+        <article class="ai-workflow-proof reveal">
+          <div class="ai-proof-copy"><small>EXTRA CONTRIBUTION</small><h3>从“单点使用”到“让团队可复用”</h3><p>独立编写《Agent 产品工作流手册》，将工具能力、使用场景、Prompt 结构、Harness / Skill 和 Agent 工具注册组织成可执行的方法，并面向产品团队完成分享，支持成员部署和实际使用。</p><ul><li><b>工具选择｜</b>按需求理解、交互能力与可编辑性匹配工具</li><li><b>Prompt 模板｜</b>结构化约束业务目标、页面范围与数据要求</li><li><b>Agent 能力｜</b>沉淀 Skill / Harness 与工具接入方法</li></ul></div>
+          <div class="work-carousel ai-evidence-carousel" aria-label="Agent 产品工作流手册证据轮播"><div class="carousel-track"><figure class="active"><img src="assets/ai-prompt-template.png" alt="可复制的原型生成 Prompt 模板"><figcaption>Prompt 模板：约束业务、交互与数据要求</figcaption></figure><figure><img src="assets/ai-tool-scenarios.png" alt="按使用场景选择 AI 工具"><figcaption>工具选择：根据产品任务匹配工具</figcaption></figure><figure><img src="assets/ai-tool-comparison.png" alt="AI 工具生成原型能力对比"><figcaption>能力对比：速度、UI、交互与适用场景</figcaption></figure></div><button class="carousel-button prev" type="button" aria-label="上一张">←</button><button class="carousel-button next" type="button" aria-label="下一张">→</button><div class="carousel-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading left reveal"><p>02 / SELECTED WORK</p><h2>个人作品</h2><span>四个完整项目，展示我如何定义问题、设计产品机制，并用原型和用户反馈验证方案。</span></div>
+
+      <div class="project-list">
+        <article class="work-card reveal" id="project-judge" data-project-card="judge">
+          <div class="work-carousel" aria-label="Judge 项目界面轮播">
+            <div class="carousel-track"><figure class="active"><img src="assets/judge-home.png" alt="Judge 产品首页"><figcaption>产品首页：选择材料与审查目标</figcaption></figure><figure><img src="assets/judge-court.png" alt="Judge 审判大厅"><figcaption>审判大厅：逐项回应指控与证据</figcaption></figure><figure><img src="assets/judge-report.png" alt="Judge 判决书"><figcaption>判决书：汇总裁决并进入再审</figcaption></figure></div>
+            <button class="carousel-button prev" type="button" aria-label="上一张">←</button><button class="carousel-button next" type="button" aria-label="下一张">→</button><div class="carousel-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div>
+          </div>
+          <div class="work-copy"><p class="project-no">CASE 01 · 2026.05—至今</p><h3>审判官 Judge</h3><p class="work-tags">AI 产品 · Agent 机制 · 对抗式审查 · Web 应用</p><p class="work-lede">面向 PRD、简历等重要材料的 AI 审查工具。不同于“一次生成一堆修改建议”，Judge 将审查变成一场可交互的审判：AI 必须基于原文证据提出指控，用户可以逐项辩护、补充材料或修改，再由 AI 重新裁决。</p><dl><div><dt>01 发起审判</dt><dd>上传材料并说明审查目标，选择对应 Judge 与审查标准，生成本次审判。</dd></div><div><dt>02 举证指控</dt><dd>AI 定位原文证据并逐项提出指控，而不是只给出笼统的“优化建议”。</dd></div><div><dt>03 辩护质询</dt><dd>用户可针对每项指控解释、补充证据或修改材料，AI 根据新信息继续质询与裁决。</dd></div><div><dt>04 判决再审</dt><dd>汇总成立与撤销的指控形成判决书；材料修改后可再次审查，验证问题是否真正解决。</dd></div></dl><a class="project-link" href="https://bvm94ojiyt5.feishuapp.com/app/app_17dt4kg31qt" target="_blank" rel="noreferrer">打开作品 <span>↗</span></a></div>
+        </article>
+
+        <article class="work-card reveal" id="project-robotaxi" data-project-card="robotaxi">
+          <div class="work-carousel portrait-carousel" aria-label="Robotaxi 城市指南原型轮播">
+            <div class="carousel-track"><figure class="active"><img src="assets/robotaxi-city.png" alt="Robotaxi 城市指南首页"><figcaption>高保真 Demo：城市指南首页</figcaption></figure><figure><img src="assets/robotaxi-route.png" alt="Robotaxi 城市指南主题路线"><figcaption>高保真 Demo：主题路线详情</figcaption></figure></div>
+            <button class="carousel-button prev" type="button" aria-label="上一张">←</button><button class="carousel-button next" type="button" aria-label="下一张">→</button><div class="carousel-dots" aria-hidden="true"><i class="active"></i><i></i></div>
+          </div>
+          <div class="work-copy"><p class="project-no">CASE 02 · 2026.06—2026.09</p><h3>Robotaxi 城市指南</h3><p class="work-tags">用户产品 · 场景卡 · 方案验证 · 需求交付</p><p class="work-lede">Robotaxi 固定运营区域限制了用户可选目的地。场景卡二期希望从“展示可达地点”进一步解决“用户不知道去哪、为什么去”的问题，因此探索城市指南方向，用主题路线与目的地内容激发出行需求，并由打车入口完成承接。</p><dl><div><dt>方案探索</dt><dd>围绕场景卡二期探索「预约打车 / 手机联动打车 / 城市指南」3 个方向，并用高保真 Demo 快速呈现核心体验，辅助方案比较与决策。</dd></div><div><dt>产品定位</dt><dd>城市指南不做完整旅游攻略，而是围绕 Robotaxi 可达范围组织目的地内容：内容负责激发“想去哪”，打车负责承接“现在去”。</dd></div><div><dt>内容组织</dt><dd>以「主题路线—目的地—地点详情」组织城市内容，通过观景、轻食、独处等场景降低用户寻找目的地的决策成本。</dd></div><div><dt>核心交互</dt><dd>将地图点位与内容联动，用户可浏览路线、查看地点并直接发起打车；同时补齐地图缩放、拖拽、点位状态及异常场景。</dd></div></dl></div>
+        </article>
+
+        <article class="work-card reveal" id="project-geo" data-project-card="geo">
+          <div class="work-carousel" aria-label="中小企业 AI 营销内容项目轮播">
+            <div class="carousel-track"><figure class="active"><img src="assets/geo-dashboard.png" alt="AI 营销内容工作台"><figcaption>工作台：管理关键词与内容任务</figcaption></figure><figure><img src="assets/geo-editor.png" alt="营销内容生成与编辑"><figcaption>内容生成：调用企业知识并完成审核</figcaption></figure><figure><img src="assets/geo-visibility.png" alt="内容收录表现"><figcaption>结果观察：查看内容收录表现</figcaption></figure></div>
+            <button class="carousel-button prev" type="button" aria-label="上一张">←</button><button class="carousel-button next" type="button" aria-label="下一张">→</button><div class="carousel-dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div>
+          </div>
+          <div class="work-copy"><p class="project-no">CASE 03 · 2025.11—至今</p><h3>中小企业 AI 营销内容生成</h3><p class="work-tags">AI 产品 · ToB · 内容生成 · GEO</p><p class="work-lede">面向缺少专职内容团队的中小企业，围绕企业知识与目标关键词，搭建「选题—生成—审核—多平台适配—效果观察」的 AI 内容工作流，降低持续内容生产成本，并提升企业内容在大模型中的可见性。</p><dl><div><dt>内容选题</dt><dd>围绕企业业务与目标关键词建立内容任务，将零散选题沉淀为可持续管理的内容计划。</dd></div><div><dt>知识增强</dt><dd>通过 RAG 调用企业知识库，将产品、业务与品牌信息带入生成过程，减少 AI 内容与企业事实脱节。</dd></div><div><dt>生产闭环</dt><dd>AI 生成初稿后进入人工审核，并针对不同平台完成内容适配；发布后持续观察收录与 AI 可见性表现。</dd></div><div><dt>项目结果</dt><dd>内容生产效率提升约 6–8 倍，企业内容的大模型平均收录达到 600+ 条。</dd></div></dl></div>
+        </article>
+
+        <article class="work-card reveal" id="project-course" data-project-card="course">
+          <div class="work-carousel portrait-carousel course-carousel" aria-label="校园课程信息工具轮播">
+            <div class="carousel-track"><figure class="active"><img src="assets/course-home-phone.png" alt="校园课程工具首页"><figcaption>首页：聚合今日课程与待确认调课</figcaption></figure><figure><img src="assets/course-change-phone.png" alt="调课详情前后对比"><figcaption>调课详情：并列展示变更前后信息</figcaption></figure></div>
+            <button class="carousel-button prev" type="button" aria-label="上一张">←</button><button class="carousel-button next" type="button" aria-label="下一张">→</button><div class="carousel-dots" aria-hidden="true"><i class="active"></i><i></i></div>
+          </div>
+          <div class="work-copy"><p class="project-no">CASE 04 · 2026.02—至今</p><h3>校园课程信息工具优化</h3><p class="work-tags">ToC 工具 · 用户调研 · 信息架构 · 用户验证</p><p class="work-lede">针对课程信息分散、临时调课难以快速识别的问题，重新设计学生查看「今天上什么、课程哪里变了、是否需要确认」的核心流程，降低课程变化的信息获取成本。</p><dl><div><dt>问题发现</dt><dd>从学生实际使用场景出发，将核心问题收敛为：今日课程查找慢、调课变化不直观、重要变更容易遗漏。</dd></div><div><dt>首页重构</dt><dd>按「待确认调课—下一节课—今日课程」重组信息优先级，让临近且需要行动的信息优先出现。</dd></div><div><dt>调课设计</dt><dd>将原本分散的调课信息聚合展示，并通过变更前 / 变更后对比 + 状态标签突出时间、地点等关键变化。</dd></div><div><dt>用户验证</dt><dd>邀请 8 名目标用户测试关键流程，7 人认可调课前后对比结构；根据反馈完成课程状态与信息结构的 2 处核心迭代。</dd></div></dl></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal"><p>04 / PRODUCT SKILLS</p><h2>抽一张我的能力档案</h2><span>点击抽取，查看我的产品能力图谱。</span></div>
+      <div class="skill-stage">
+        <button class="deck draw-button" type="button" aria-label="随机抽取一张能力卡"><i></i><i></i><span>HY<br><small>点击抽取能力 ✦</small></span></button>
+        <article class="skill-card" aria-live="polite"><small>PRODUCT SKILL 01</small><h3>产品设计与需求管理</h3><p>需求拆解、功能规划、业务流程设计、PRD 撰写、原型设计、需求评审与项目推进；熟悉 Axure、Figma、墨刀。</p><span class="skill-proof">用户调研 · 用户测试 · 竞品分析 · 用户旅程</span></article>
+      </div>
+    </section>
+
+    <section class="section compact" id="education">
+      <div class="section-heading reveal"><p>01 / LEARNING PATH</p><h2>理工科，是我的产品底色</h2><span>系统工程训练让我习惯从约束、逻辑与数据出发，也让我更关注技术如何真正转化为产品价值。</span></div>
+      <article class="education-card reveal"><div class="school-photo"><img src="assets/uestc-campus.jpg" alt="电子科技大学校园夜景"><div><span>UESTC</span><small>电子科技大学</small></div></div><div><p>2023.09 — 2027.06</p><h3>电气工程及其自动化 · 本科</h3><h4>GPA 3.6 / 4.0</h4><div class="tags"><span>985 / 双一流</span><span>校立人班</span><span>CET-6</span></div><ul><li>全国先进计算技术创新大赛国铜奖</li><li>专项奖学金、优秀共青团员</li><li>院辩论队副队长，组织 20+ 场训练与赛事</li></ul></div></article>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal"><p>05 / LET'S TALK</p><h2>下一段产品经历，<br>期待与你一起创造。</h2><span>正在寻找 2027 届产品经理 / AI 产品经理校招机会。</span><div class="contact-actions"><a class="button mint" href="mailto:heyue092@gmail.com">写邮件给我 ↗</a><button class="button ghost" type="button" data-copy="heyue092@gmail.com">复制邮箱</button><a class="button ghost" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">查看简历.pdf</a></div><a class="back-top" href="#home">回到顶部 ↑</a></div>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite">邮箱已复制</div>
+  <script src="script.js"></script>
+</body>
+</html>

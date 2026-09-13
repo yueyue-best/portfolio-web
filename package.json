@@ -1,0 +1,6 @@
+{
+  "name": "heyue-portfolio",
+  "private": true,
+  "scripts": { "test": "node verify.mjs" },
+  "devDependencies": { "playwright": "^1.56.0" }
+}
